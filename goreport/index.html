@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="movieQuotes" ng-controller="getQuote">
+	<head>
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<div id="header">
+			<h1>Movie Quote Generator</h1>
+		</div>
+		<div id="quoteContent" ng-repeat="quote in quotes" ng-cloak>
+			<div id="quoteBody">
+			<h2>"{{quote.content}}"</h2>
+			</div>
+			<div id="quoteInfo">
+				<span id="character">~{{quote.character}} ({{quote.actor}}), {{quote.film}} {{quote.year}}</span><br />
+			</div>
+		</div>
+		<div id="controls">
+			<div id="randomQuoteButton" ng-click="randomQuote()"  ng-mousedown="rbStyle={color:'white'}" ng-mouseup="rbStyle={color:'black'}
+			" ng-style="rbStyle"><p>Random Quote</p></div>
+			<div id="navControls">
+				<div id="prevButton" ng-click="prevQuote()"   ng-mousedown="prevStyle={'border-right-color':'white'}"
+				ng-mouseup="prevStyle={'border-right-color':'red'}" ng-style="prevStyle"></div>
+				<form ng-submit="getQuoteById()" ng-cloak>
+					<input type="number" ng-model="quoteIdInput" id="quoteIdInput" value={{myQuote.id}}>
+				</form>
+				<div id="nextButton" ng-click="nextQuote()" ng-mousedown="nbStyle={'border-left-color':'white'}"
+				ng-mouseup="nbStyle={'border-left-color':'red'}"
+				ng-style="nbStyle"></div>
+			</div>
+			<div id="quoteListButton" ng-click="getQuotes()"  ng-mousedown="qlStyle={color:'white'}" ng-mouseup="qlStyle={color:'black'}"
+			ng-style="qlStyle"><p>All Quotes</p></div>
+		</div>
+		<script src="js/jquery-1.12.3.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

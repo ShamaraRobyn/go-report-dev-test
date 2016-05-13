@@ -1,0 +1,102 @@
+body, body *{
+	font-family:"helvetica"; margin: 0;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+body{
+	background: repeating-linear-gradient(-45deg, #CCFFEE, #CCFFEE 5px, #EEEEEE 5px, #EEEEEE 10px); 
+}
+
+#header {
+	display: inline-block; position: static; width: 100%; height: 8em; text-align: center; background-color: rgba(20,20,20,0.2);
+	display: flex;
+  	flex-direction: column;
+ 	justify-content: center;
+}
+
+#header h1 {
+	position: static; font-size: 4em; margin:auto;
+}
+
+#quoteContent{display: inline-block; position: static; width: 100%; height: 12em; background-color: #CCFFEE; text-align: center;
+padding-top: 2em;}
+
+#quoteBody{
+	vertical-align: middle;
+	text-align: center;
+	position: static; 
+	height: 8em;
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	margin: 0; padding: 0;
+}
+
+#quoteBody h2 {
+	display: block; border-color: #000000; border-style: dashed; width: auto; padding: 1em; background-color: rgba(20,20,20,0.1);
+}
+
+#quoteInfo {display: block; padding-top: 0.5em; padding-bottom: 1em;}
+
+#quoteInfo span{display: inline-block; font-size: 1.5em; }
+
+#character {
+}
+
+#film{
+
+}
+
+#controls {
+	display: inline-block; position: relative; width: 100%; height: 4em; background-color: rgba(20,20,20,0.2); text-align: center; padding-top: 0.2em;
+	padding-bottom: 0.2em;
+}
+
+#controls div,form{display: inline-block; position:relative; vertical-align: middle}
+
+#navControls {display: inline-block; vertical-align: middle;
+ display: flex;
+  flex-direction: column;
+  justify-content: center;}
+
+#nextButton{
+	width: 0;
+	height: 0;
+	border-top: 1em solid transparent;
+	border-left: 2em solid red;
+	border-bottom: 1em solid transparent;
+	margin-left: 0.5em; margin-right: 0.5em;
+}
+
+#prevButton{
+	width: 0;
+	height: 0;
+	border-top: 1em solid transparent;
+	border-right: 2em solid red;
+	border-bottom: 1em solid transparent;
+	margin-left: 0.5em; margin-right: 0.5em;
+}
+
+#quoteIdInput{
+	width: 2em; position: relative;
+	font-size: 2em; text-align: center;
+}
+
+#randomQuoteButton{
+	width: 8em; height: 100%; background-color: #FFAA00; position: relative; font-size: 2em;
+}
+
+#randomQuoteButton p {
+	position:relative; top: 50%; transform: translateY(-50%);
+}
+
+#quoteListButton{
+	width: 8em; height: 100%; background-color: #FFAA00; position: relative; font-size: 2em;
+}
+
+#quoteListButton p {
+	position:relative; top: 50%; transform: translateY(-50%);
+}
